@@ -1,32 +1,65 @@
 <!DOCTYPE html>
-<html>
+<html lang="pl">
 <head>
-<meta charset="UTF-8">
+<meta charset="utf-8">
 <title>84WEh – Seria</title>
+<meta name="viewport" content="width=device-width,initial-scale=1">
 <style>
-body { background:#0d1117; color:#e6edf3; font-family:Arial; margin:0; }
-.container { max-width:1000px; margin:auto; padding:30px; }
-.card { background:#161b22; padding:15px; border-radius:8px; margin-bottom:15px; }
-a { color:#22c55e; text-decoration:none; font-weight:bold; }
+  :root{--bg:#0d1117;--card:#161b22;--accent:#22c55e;--muted:#9ca3af;--text:#e6edf3}
+  body{margin:0;font-family:Inter,Arial,sans-serif;background:var(--bg);color:var(--text)}
+  .wrap{max-width:1100px;margin:28px auto;padding:18px}
+  a{color:var(--accent);text-decoration:none}
+  h1{margin:0 0 6px}
+  .topbar{display:flex;align-items:center;gap:12px;margin-bottom:16px}
+  .card{background:var(--card);padding:14px;border-radius:10px;margin-bottom:12px}
+  table{width:100%;border-collapse:collapse;background:var(--card);border-radius:8px;overflow:hidden}
+  td{padding:12px;border-bottom:1px solid rgba(255,255,255,0.03)}
+  td:first-child{color:var(--muted);width:42%}
+  .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:14px;margin-top:16px}
+  .ex{background:var(--card);padding:12px;border-radius:8px}
+  .ex h3{margin:0 0 6px}
+  .status{font-size:13px;color:var(--muted)}
 </style>
 </head>
 <body>
+<div class="wrap">
+  <div class="topbar">
+    <a href="index.html">← Powrót</a>
+  </div>
 
-<div class="container">
-<h1>Seria 84WEh</h1>
-<p>Hybrydowy EZT pierwszej generacji</p>
+  <h1>84WEh</h1>
+  <div class="card">
+    Hybrydowy elektryczny zespół trakcyjny — fikcyjna seria stworzona dla dodatków MaSzyny.
+  </div>
 
-<h2>Egzemplarze:</h2>
+  <h2 style="margin-top:22px">Dane techniczne</h2>
+  <table>
+    <tr><td>Typ</td><td>Hybrydowy EZT</td></tr>
+    <tr><td>Moc</td><td>2000 kW</td></tr>
+    <tr><td>Prędkość maks.</td><td>160 km/h</td></tr>
+    <tr><td>Status</td><td>Aktywny</td></tr>
+  </table>
 
-<div class="card">
-84WEh-001 – <a href="84weh-001.html">Zobacz</a>
+  <h2 style="margin-top:22px">Egzemplarze</h2>
+  <div class="grid">
+    <a class="ex" href="84weh-001.html">
+      <h3>84WEh-001</h3>
+      <div class="status">Status: Aktywny</div>
+    </a>
+
+    <a class="ex" href="84weh-002.html">
+      <h3>84WEh-002</h3>
+      <div class="status">Status: Aktywny</div>
+    </a>
+
+    <a class="ex" href="84weh-003.html">
+      <h3>84WEh-003</h3>
+      <div class="status">Status: Aktywny</div>
+    </a>
+
+    <!-- kopiuj wpis <a class="ex" href="84weh-00X.html"> by dodać kolejne -->
+  </div>
+
 </div>
-
-<div class="card">
-84WEh-002 – <a href="84weh-002.html">Zobacz</a>
-</div>
-
-</div>
-
 </body>
 </html>
