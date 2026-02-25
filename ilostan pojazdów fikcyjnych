@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Ilostan Fikcyjności</title>
+<style>
+body {
+    background-color: #111;
+    color: white;
+    font-family: Arial;
+    margin: 0;
+}
+header {
+    background: #00aa66;
+    padding: 20px;
+    text-align: center;
+    font-size: 28px;
+    font-weight: bold;
+}
+.container {
+    padding: 20px;
+}
+.card {
+    background: #222;
+    padding: 15px;
+    margin-bottom: 15px;
+    border-radius: 8px;
+}
+a {
+    color: #00ff99;
+    text-decoration: none;
+}
+</style>
+</head>
+<body>
+
+<header>
+Ilostan Fikcyjności – MaSzyna
+</header>
+
+<div class="container">
+
+<div class="card">
+<h2>84WEh</h2>
+<p>Hybrydowy EZT pierwszej generacji</p>
+<a href="#">Zobacz serię</a>
+</div>
+
+<div class="card">
+<h2>95WEh</h2>
+<p>Nowa generacja hybrydowych EZT</p>
+<a href="#">Zobacz serię</a>
+</div>
+
+</div>
+
+</body>
+</html>
